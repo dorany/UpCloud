@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aplicacion Para Subir Archivos</title>
+    <link rel="icon" type="image/png" href="#" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Gloria a Dios en las altura, y PHB</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Sobre Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Ervicios</a>
+                    </li>
+                    <li>
+                        <a href="#">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+		      <p class="lead">Para Subir Archivos.</p>
+                <div class="list-group">
+                   <!-- <a href="#" class="list-group-item">Category 1</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Aqui comieza el codigo de formulario-->
+    <div class="container">
+        <form action="my_parser.php" method="post" enctype="multipart/form-data">
+	        <p>
+	            <!--Estas lineas de codigos toman el nombre y el telefono-->
+                <label for="name"><font color="red">*</font> Name / Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="pnumber"><font color="red">*</font> Phone / Telefono:</label><br>
+                <input type="tel" id="pnumber" name="pnumber" required><br><br>
+            </p>
+	
+	        <p> <input type="file" name="file_array[]"></p>
+	        <p> <input type="file" name="file_array[]"></p>
+	        <p> <input type="file" name="file_array[]"></p>
+	
+	        <p> <input type="file" name="file_array[]"></p>
+	        <p> <input type="file" name="file_array[]"></p>
+	        <p> <input type="file" name="file_array[]"></p>
+
+	        <P>
+	            <!--Esta linea de codigo toma la notas-->
+	            <label for="nota">Notas:</label><br>
+                <textarea id="notas" name="notas" rows="4" cols="50"></textarea>
+	        </P>
+	
+	        <p>Cuando haya seleccionado la informacion<br>Favor de presionar el boton azul.</p>
+	        <input type="submit" value="Upload all files">
+        </form>
+    </div>
+    <!--Aqui finaliza el codigo de formulario-->
+
+    <!-- /.container -->
+    <div class="container">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Casa de Vida Orlando</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
