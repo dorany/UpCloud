@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+
+    <link rel="stylesheet" href="modificacion2.css" />
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="modificacion.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">sobre Nosotros</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Servicios</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link">Contatanos</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link nav-link nav-menu-link_active"
+              >registrase</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Gloria a Dios en las altura, y PHB </h1>
+    </main>
+
+    
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+		      <p class="lead">Para Subir Archivos.</p>
+                <div class="list-group">
+                   <!-- <a href="#" class="list-group-item">Category 1</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Aqui comieza el codigo de formulario-->
+    <div class="container">
+        <form action="my_parser.php" method="post" enctype="multipart/form-data">
+	        <p>
+	            <!--Estas lineas de codigos toman el nombre y el telefono-->
+                <label for="name"><font color="red">*</font> Name / Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="pnumber"><font color="red">*</font> Phone / Telefono:</label><br>
+                <input type="tel" id="pnumber" name="pnumber" required><br><br>
+            </p>
+	
+	        <p> <input type="file" name="file_array[]"></p>
+	        <p> <input type="file" name="file_array[]"></p>
+	        <p> <input type="file" name="file_array[]"></p>
+	
+	        <p> <input type="file" name="file_array[]"></p>
+	        <p> <input type="file" name="file_array[]"></p>
+	        <p> <input type="file" name="file_array[]"></p>
+
+	        <P>
+	            <!--Esta linea de codigo toma la notas-->
+	            <label for="nota">Notas:</label><br>
+                <textarea id="notas" name="notas" rows="4" cols="50"></textarea>
+	        </P>
+	
+	        <p>Cuando haya seleccionado la informacion<br>Favor de presionar el boton azul.</p>
+	        <input type="submit" value="Upload all files">
+        </form>
+    </div>
+    <!--Aqui finaliza el codigo de formulario-->
+
+    <!-- /.container -->
+    <div class="container">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="copy">
+                    <p>Copyright &copy; Casa de Vida Orlando</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+ 
+  </body>
+</html>
